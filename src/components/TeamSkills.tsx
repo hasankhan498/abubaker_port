@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     initials: "RT",
-    name: "Rehan Tariq",
+    name: "Rehan Tahir",
     role: "Junior Frontend Developer",
     skills: ["React", "Bootstrap", "Javascript","HTML5","CSS3"],
     color: "from-cyan-400 to-green-400",

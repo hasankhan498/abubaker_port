@@ -6,6 +6,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import image from "../../public/avatar.png"
+import vapeimg from "../../public/vapesProject.png"
 import { NavLink } from "react-router-dom";
 
 
@@ -43,7 +44,7 @@ const projects: Project[] = [
     category: "Custom Web",
     result: "1k Daily visitors",
     description: "Real-time Product based dashboard without huge Ecommerce Eco system of Vapes and dispatch.",
-    img: image,
+    img: vapeimg,
     link:"https://www.vapescluster.com/",
   },
   {
@@ -135,7 +136,7 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={project.title}
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -152,8 +153,9 @@ const Portfolio = () => {
     backdrop-blur-xl
     hover:border-green-400/30
     hover:shadow-[0_0_35px_rgba(74,222,128,0.15)]
-    transition-all
+    transition-all block
   "
+  href={project?.link}
             >
 
 
@@ -208,7 +210,7 @@ const Portfolio = () => {
                   {project.description}
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 

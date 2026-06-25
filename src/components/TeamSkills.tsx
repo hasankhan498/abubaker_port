@@ -7,7 +7,14 @@ const teamMembers = [
     initials: "MHK",
     name: "Muhammad Hasan Khan",
     role: "Lead Senior Frontend Developer",
-    skills: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    skills: ["React", "Next.js", "Tailwind CSS", "TypeScript","vite"],
+    color: "from-cyan-400 to-green-400",
+  },
+  {
+    initials: "RT",
+    name: "Rehan Tariq",
+    role: "Junior Frontend Developer",
+    skills: ["React", "Bootstrap", "Javascript","HTML5","CSS3"],
     color: "from-cyan-400 to-green-400",
   },
   {
@@ -112,7 +119,7 @@ const TeamSection = () => {
               </p>
 
               <div className="flex flex-wrap gap-3 mt-6">
-                {["Strategy", "Business Growth", "SEO", "Marketing"].map(
+                {["Strategy", "Business Growth", "Marketing"].map(
                   (skill) => (
                     <span
                       key={skill}

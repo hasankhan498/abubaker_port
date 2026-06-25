@@ -119,9 +119,13 @@ const Services = () => {
                   y: 0,
                 }}
                 viewport={{ once: true }}
+                // transition={{
+                //   delay: index * 0.08,
+                //   duration: 0.5,
+                // }}
                 transition={{
-                  delay: index * 0.08,
-                  duration: 0.5,
+                  opacity: { duration: 0.5, delay: index * 0.08 },
+                  y: { duration: 0.3 }
                 }}
                 whileHover={{
                   y: -10,
@@ -137,7 +141,6 @@ const Services = () => {
                   shadow-lg
                   shadow-slate-200/70
                   overflow-hidden
-                  cursor-pointer
                 "
               >
                 {/* Hover Glow */}
